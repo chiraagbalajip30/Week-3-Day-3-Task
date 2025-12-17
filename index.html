@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini UI Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>UI Component Library</h1>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container">
+
+    <!-- TOGGLE MENU CARD -->
+    <section class="card">
+      <h2>Toggle Menu</h2>
+      <button id="menuBtn">☰ Toggle Menu</button>
+      <nav id="menu" class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </section>
+
+    <!-- MODAL CARD -->
+    <section class="card">
+      <h2>Modal Popup</h2>
+      <button id="openModal">Open Modal</button>
+    </section>
+
+    <!-- ACCORDION CARD -->
+    <section class="card">
+      <h2>FAQ Accordion</h2>
+      <h4 class="question">What is JavaScript?</h4>
+      <p class="answer">JavaScript makes websites interactive.</p>
+
+      <h4 class="question">What is DOM?</h4>
+      <p class="answer">DOM represents HTML as objects.</p>
+    </section>
+
+    <!-- TOAST CARD -->
+    <section class="card">
+      <h2>Toast Notification</h2>
+      <button id="notifyBtn">Show Notification</button>
+    </section>
+
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>This is a professional modal</p>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* .menu {
+  display: none;
+}
+
+.menu a {
+  display: block;
+  margin: 6px 0;
+  text-decoration: none;
+}
+
+.menu.show {
+  display: block;
+} */
+
+/* ------------------------------------------ */
+
+/* .modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+} */
+
+/* ------------------------------------------------ */
+
+/* .answer {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.answer.show {
+  display: block;
+} */
+
+/* -------------------------------------------- */
+
+/* body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: white;
+} */
+
+/* ---------------------------------------------- */
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

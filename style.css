@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif, Segoe UI;
+  background: #7b9669;
+  color: #222;
+  transition: 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: #bbbdbc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+body.dark .header {
+  background: #3c4044;
+}
+
+.header button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+/* MAIN GRID */
+.container {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* CARD */
+.card {
+  background: #cccccc;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+body.dark .card {
+  background: #3c4044;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+}
+
+/* MENU */
+.menu {
+  display: none;
+  margin-top: 10px;
+}
+
+.menu.show {
+  display: block;
+}
+
+.menu a {
+  display: block;
+  margin: 6px 0;
+}
+
+/* ACCORDION */
+.answer {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.answer.show {
+  display: block;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+body.dark .modal-content {
+  background: #222;
+}
+
+/* TOAST */
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 10px;
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
